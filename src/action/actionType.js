@@ -1,0 +1,2 @@
+export const INPUT_CHANGE_ACTION = "INPUT_CHANGE_ACTION";
+export const DEMO_ACTION = "DEMO_ACTION";
