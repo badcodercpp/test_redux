@@ -10,13 +10,9 @@ export default class CustomInput extends Component {
         
     }
     _change_input=(evt)=>{
-        //this.setState({inputVal:evt.target!==undefined?evt.target.value:evt.currentTarget.value})
-        //this.props.m({common:evt.target!==undefined?evt.target.value:evt.currentTarget.value})
-
-        let {actions} =this.props;
+        const {actions} =this.props;
         actions.INPUT_CHANGE_ACTION_DISPATCH(evt.target!==undefined?evt.target.value:evt.currentTarget.value)
-        actions.DEMO_ACTION_DISPATCH("hello ")
-        // comment
+        //actions.DEMO_ACTION_DISPATCH("hello ")
     }
     render(){
         return (

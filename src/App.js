@@ -5,6 +5,9 @@ import CP from './component/paragraph/cp'
 import reducer from './reducer/index'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
+import EmailInput from './container/emailContainer';
+import SubmitButton from './container/submitContainer';
+import PasswordInput from './container/passwordContainer'
 
 const store = createStore(reducer)
 
@@ -23,8 +26,9 @@ class App extends Component {
     return (
       <Provider store={store} >
         <div className="App">
-          <CustomInput  />
-          <CP />
+          <EmailInput />
+          <PasswordInput />
+          <SubmitButton />
         </div>
       </Provider>
     );
